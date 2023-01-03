@@ -1,2 +1,3 @@
 # MicroBreaks
-This is a macOS menu bar application that helps users take short breaks while working to improve their focus and productivity. The app includes a customizable timer and sends notifications to remind users to take breaks. The app is implemented in Swift and uses SwiftUI for the user interface.
+
+This is a menubar app for macOS that helps you improve learning and memory through the use of breaks based on the "gap effect." Customize break frequency, duration, and activity, and receive reminder notifications to boost your study skills and memory retention. The app is implemented in SwiftUI.
