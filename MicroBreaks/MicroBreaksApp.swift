@@ -13,6 +13,7 @@ struct GapTheoryApp: App {
 
     // Connect the app delegate instance to this app
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    @Environment(\.colorScheme) private var colorScheme
     
     var body: some Scene {
         MenuBarExtra {
@@ -22,7 +23,11 @@ struct GapTheoryApp: App {
                 .environmentObject(appDelegate)
         }
         label: {
-            Image("menu-icon")
+            Image("MenuIcon")
+            
+            Image(systemName: "gear")
+                    .font(.system(size: 22))
+                    .foregroundColor(colorScheme == .light ? .green : .blue)
         }
         .menuBarExtraStyle(.window)
     }
