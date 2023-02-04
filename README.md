@@ -1,4 +1,4 @@
-<img src="app-icon.png" width="200"/>
+<img src="app-icon.png" width="150"/>
 
 # MicroBreaks
 
