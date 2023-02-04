@@ -28,21 +28,20 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                Text("Quit")
-                    .foregroundColor(.grey)
-                    .onTapGesture {
+                Menu {
+                    Button("Preferences") {
+                        appDelegate.openSettingsWindow()
+                    }
+                    Button("Quit") {
                         appDelegate.quitApp()
-                }
-                Button(action: {
-                    openSettings()
-                }) {
+                    }
+                } label: {
                     Image(systemName: "ellipsis")
-                        .padding([.leading,.top,.bottom], 10)
-                        .contentShape(Rectangle())
-                        .font(.system(size: 18))
-                        .foregroundColor(.white)
                 }
-                .buttonStyle(PlainButtonStyle())
+                .menuStyle(.borderlessButton)
+                .menuIndicator(.hidden)
+                .fixedSize()
+                .scaleEffect(1.4)
             }
             .padding(.bottom, 8)
             
@@ -104,10 +103,6 @@ struct HomeView: View {
             viewModel.update()
         }
     }
-    func openSettings() {
-        appDelegate.openSettingsWindow()
-    }
-    
     var formattedTimeRemaining: String {
         return secondsToHoursMinutesSeconds(seconds: viewModel.secondsLeftInStudySession)
     }
