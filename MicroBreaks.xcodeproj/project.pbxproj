@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642B24FA298C80E100044C4E /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B24F9298C80E100044C4E /* HomeView-ViewModel.swift */; };
+		6497CCA529897B3E007E6C93 /* session-ended.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6497CCA229897B3E007E6C93 /* session-ended.wav */; };
+		6497CCA629897B3E007E6C93 /* break-ended.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6497CCA329897B3E007E6C93 /* break-ended.wav */; };
+		6497CCA729897B3E007E6C93 /* break-started.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6497CCA429897B3E007E6C93 /* break-started.wav */; };
+		64D5A274298AAAC20090229E /* AllowNotificationsMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5A273298AAAC20090229E /* AllowNotificationsMessage.swift */; };
+		64ED3C4C298877FC0028372A /* MicroBreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED3C4B298877FC0028372A /* MicroBreaksApp.swift */; };
+		64ED3C50298877FD0028372A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64ED3C4F298877FD0028372A /* Assets.xcassets */; };
+		64ED3C53298877FD0028372A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64ED3C52298877FD0028372A /* Preview Assets.xcassets */; };
+		64ED3C5D298878A60028372A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED3C5C298878A60028372A /* AppDelegate.swift */; };
+		64F28EC92988798400B15138 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EC82988798400B15138 /* HomeView.swift */; };
+		64F28ECB2988798F00B15138 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28ECA2988798F00B15138 /* SettingsView.swift */; };
+		64F28ECD298879B900B15138 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28ECC298879B900B15138 /* Options.swift */; };
+		64F28ED0298879E200B15138 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28ECF298879E200B15138 /* CircularButton.swift */; };
+		64F28ED229887A6000B15138 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28ED129887A6000B15138 /* UserSettings.swift */; };
+		64F28ED529887A9400B15138 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28ED429887A9400B15138 /* utilities.swift */; };
+		64F28EDB29887AE700B15138 /* notificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EDA29887AE700B15138 /* notificationService.swift */; };
+		64F28EDD29887AF200B15138 /* audioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EDC29887AF200B15138 /* audioService.swift */; };
+		64F28EDF29887B8D00B15138 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EDE29887B8D00B15138 /* UserDefaults+Extensions.swift */; };
+		64F28EE229887BC200B15138 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EE129887BC200B15138 /* Colors.swift */; };
+		64F28EE4298883CB00B15138 /* GitHubFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F28EE3298883CA00B15138 /* GitHubFooter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		642B24F9298C80E100044C4E /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		6497CCA229897B3E007E6C93 /* session-ended.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "session-ended.wav"; sourceTree = "<group>"; };
+		6497CCA329897B3E007E6C93 /* break-ended.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "break-ended.wav"; sourceTree = "<group>"; };
+		6497CCA429897B3E007E6C93 /* break-started.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "break-started.wav"; sourceTree = "<group>"; };
+		64D5A273298AAAC20090229E /* AllowNotificationsMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationsMessage.swift; sourceTree = "<group>"; };
+		64ED3C48298877FC0028372A /* MicroBreaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBreaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64ED3C4B298877FC0028372A /* MicroBreaksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroBreaksApp.swift; sourceTree = "<group>"; };
+		64ED3C4F298877FD0028372A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64ED3C52298877FD0028372A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64ED3C54298877FD0028372A /* MicroBreaks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicroBreaks.entitlements; sourceTree = "<group>"; };
+		64ED3C5C298878A60028372A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64F28EC82988798400B15138 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		64F28ECA2988798F00B15138 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		64F28ECC298879B900B15138 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		64F28ECF298879E200B15138 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		64F28ED129887A6000B15138 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		64F28ED429887A9400B15138 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		64F28EDA29887AE700B15138 /* notificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationService.swift; sourceTree = "<group>"; };
+		64F28EDC29887AF200B15138 /* audioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioService.swift; sourceTree = "<group>"; };
+		64F28EDE29887B8D00B15138 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		64F28EE129887BC200B15138 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		64F28EE3298883CA00B15138 /* GitHubFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFooter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64ED3C45298877FC0028372A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64A4E7E4298EAF1300410FEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				642B24F9298C80E100044C4E /* HomeView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		64ED3C3F298877FC0028372A = {
+			isa = PBXGroup;
+			children = (
+				64ED3C4A298877FC0028372A /* MicroBreaks */,
+				64ED3C49298877FC0028372A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64ED3C49298877FC0028372A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64ED3C48298877FC0028372A /* MicroBreaks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64ED3C4A298877FC0028372A /* MicroBreaks */ = {
+			isa = PBXGroup;
+			children = (
+				64ED3C5C298878A60028372A /* AppDelegate.swift */,
+				64F28ED429887A9400B15138 /* utilities.swift */,
+				64ED3C4B298877FC0028372A /* MicroBreaksApp.swift */,
+				64F28ED129887A6000B15138 /* UserSettings.swift */,
+				64F28EDE29887B8D00B15138 /* UserDefaults+Extensions.swift */,
+				64F28EE029887BB400B15138 /* Extras */,
+				64F28ECC298879B900B15138 /* Options.swift */,
+				64F28ED329887A7B00B15138 /* Services */,
+				64F28ECE298879D100B15138 /* Components */,
+				64ED3C4F298877FD0028372A /* Assets.xcassets */,
+				64A4E7E4298EAF1300410FEC /* ViewModels */,
+				64ED3C5F298879490028372A /* Screens */,
+				64ED3C5E298878C10028372A /* Audio */,
+				64ED3C54298877FD0028372A /* MicroBreaks.entitlements */,
+				64ED3C51298877FD0028372A /* Preview Content */,
+			);
+			path = MicroBreaks;
+			sourceTree = "<group>";
+		};
+		64ED3C51298877FD0028372A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64ED3C52298877FD0028372A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64ED3C5E298878C10028372A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6497CCA329897B3E007E6C93 /* break-ended.wav */,
+				6497CCA429897B3E007E6C93 /* break-started.wav */,
+				6497CCA229897B3E007E6C93 /* session-ended.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		64ED3C5F298879490028372A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				64F28EC82988798400B15138 /* HomeView.swift */,
+				64F28ECA2988798F00B15138 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		64F28ECE298879D100B15138 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				64F28ECF298879E200B15138 /* CircularButton.swift */,
+				64D5A273298AAAC20090229E /* AllowNotificationsMessage.swift */,
+				64F28EE3298883CA00B15138 /* GitHubFooter.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		64F28ED329887A7B00B15138 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64F28EDA29887AE700B15138 /* notificationService.swift */,
+				64F28EDC29887AF200B15138 /* audioService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64F28EE029887BB400B15138 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				64F28EE129887BC200B15138 /* Colors.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64ED3C47298877FC0028372A /* MicroBreaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64ED3C57298877FD0028372A /* Build configuration list for PBXNativeTarget "MicroBreaks" */;
+			buildPhases = (
+				64ED3C44298877FC0028372A /* Sources */,
+				64ED3C45298877FC0028372A /* Frameworks */,
+				64ED3C46298877FC0028372A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroBreaks;
+			productName = MicroBreaks;
+			productReference = 64ED3C48298877FC0028372A /* MicroBreaks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64ED3C40298877FC0028372A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					64ED3C47298877FC0028372A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 64ED3C43298877FC0028372A /* Build configuration list for PBXProject "MicroBreaks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64ED3C3F298877FC0028372A;
+			productRefGroup = 64ED3C49298877FC0028372A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64ED3C47298877FC0028372A /* MicroBreaks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64ED3C46298877FC0028372A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6497CCA529897B3E007E6C93 /* session-ended.wav in Resources */,
+				6497CCA629897B3E007E6C93 /* break-ended.wav in Resources */,
+				64ED3C53298877FD0028372A /* Preview Assets.xcassets in Resources */,
+				6497CCA729897B3E007E6C93 /* break-started.wav in Resources */,
+				64ED3C50298877FD0028372A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64ED3C44298877FC0028372A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F28ECB2988798F00B15138 /* SettingsView.swift in Sources */,
+				64ED3C5D298878A60028372A /* AppDelegate.swift in Sources */,
+				64F28EC92988798400B15138 /* HomeView.swift in Sources */,
+				64F28ECD298879B900B15138 /* Options.swift in Sources */,
+				64F28ED229887A6000B15138 /* UserSettings.swift in Sources */,
+				64ED3C4C298877FC0028372A /* MicroBreaksApp.swift in Sources */,
+				64F28ED529887A9400B15138 /* utilities.swift in Sources */,
+				64D5A274298AAAC20090229E /* AllowNotificationsMessage.swift in Sources */,
+				64F28EE229887BC200B15138 /* Colors.swift in Sources */,
+				64F28EDB29887AE700B15138 /* notificationService.swift in Sources */,
+				64F28EDD29887AF200B15138 /* audioService.swift in Sources */,
+				64F28EDF29887B8D00B15138 /* UserDefaults+Extensions.swift in Sources */,
+				64F28EE4298883CB00B15138 /* GitHubFooter.swift in Sources */,
+				642B24FA298C80E100044C4E /* HomeView-ViewModel.swift in Sources */,
+				64F28ED0298879E200B15138 /* CircularButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64ED3C55298877FD0028372A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64ED3C56298877FD0028372A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		64ED3C58298877FD0028372A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MicroBreaks/MicroBreaks.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MicroBreaks/Preview Content\"";
+				DEVELOPMENT_TEAM = 2Q2BCJ3926;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larussverris.MicroBreaks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		64ED3C59298877FD0028372A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MicroBreaks/MicroBreaks.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MicroBreaks/Preview Content\"";
+				DEVELOPMENT_TEAM = 2Q2BCJ3926;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.larussverris.MicroBreaks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64ED3C43298877FC0028372A /* Build configuration list for PBXProject "MicroBreaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64ED3C55298877FD0028372A /* Debug */,
+				64ED3C56298877FD0028372A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64ED3C57298877FD0028372A /* Build configuration list for PBXNativeTarget "MicroBreaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64ED3C58298877FD0028372A /* Debug */,
+				64ED3C59298877FD0028372A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64ED3C40298877FC0028372A /* Project object */;
+}
