@@ -6,4 +6,8 @@ This is a menubar app for macOS that helps you improve learning and memory throu
 
 <br>
 
-![alt text](screenshot2.png)
+![](screenshot2.png)
+
+![](screenshot3.png)
+
+![](screenshot4.png)
