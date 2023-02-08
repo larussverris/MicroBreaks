@@ -36,7 +36,9 @@ struct HomeView: View {
                         appDelegate.quitApp()
                     }
                 } label: {
-                    Image(systemName: "ellipsis")
+                    Image("Ellipsis")
+                        .foregroundColor(.orange)
+                        .foregroundColor(Color.blue)
                 }
                 .menuStyle(.borderlessButton)
                 .menuIndicator(.hidden)
