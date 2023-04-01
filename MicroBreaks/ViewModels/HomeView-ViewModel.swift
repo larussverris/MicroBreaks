@@ -85,7 +85,7 @@ extension HomeView {
         func generateRandomEvents() {
             self.events.removeAll() // clear the set
             let numberOfTwoMinuteBlocks = self.userSettings.settings.studyDuration/120
-            for i in 0...numberOfTwoMinuteBlocks-2 {
+            for i in 0...numberOfTwoMinuteBlocks {
                 let event = Int.random(in: 105...135)
                 let ble = (i*120)+event
                 events.insert(ble)
